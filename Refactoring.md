@@ -9,3 +9,9 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+1. I used optional chaining (?.) and nullish coalescing (||) operators to simplify the logic for determining the candidate partition key.
+2. Remove unnecessary comments that describe what the code is doing, as the code itself should be self-explanatory.
+3. Rename data to event as it better reflects the purpose of the variable.
+4. Combine the if statements that check if candidate is a string and TRIVIAL_PARTITION_KEY is used into a single else statement.
+5. Remove the let declaration for candidate from the top of the function and instead initialize it when it is first assigned.
